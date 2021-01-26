@@ -127,8 +127,8 @@ def iconThread():
     item = pystray.MenuItem
     if os.path.isfile("images.png"):
         image = Image.open("images.png")
-        menu = (item('ApexPredatorPointsTracker Bot', lambda : action()), item("Exit", lambda: action()))
-        icon = pystray.Icon("ApexPredatorPointsTracker bot", image, "ApexPredatorPointsTracker bot", menu)
+        menu = (item(YourNameIcon_PLACEHOLDER, lambda : action()), item("Exit", lambda: action()))
+        icon = pystray.Icon(YourNameIcon_PLACEHOLDER, image, YourNameIcon_PLACEHOLDER, menu)
         print("Icon run...")
         icon.run()
     else:
@@ -147,7 +147,7 @@ def main():
             f = open("data.txt", "r")
             nickname = f.read()
             threading._start_new_thread(iconThread, ())
-            bot = TwitchBot("ApexPredatorPointTracker", "o2vpodo3ye5z1nuf12ik6sm7rbfaju", "leqwx51uhkwau6sku7w5nq8yl5wp3t", nickname)
+            bot = TwitchBot(YourBotNickname_PLACEHOLDER, YourAppCliendID_PLACEHOLDER, YourBotoAuthCode_PLACEHOLDER, nickname)
             bot.start()
     else:
         print("File non trovato")
