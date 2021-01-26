@@ -1,7 +1,7 @@
 # ApexPredatorPointsTracker-Bot-with-Python
 Python program to make a bot which you can receive Apex Legends ranked data
 
-This program is made up to read the nickname of the channel in a file called "data.txt" in the same folder.
+This program is made up to read the nickname of the channel you want your bot to write in a file called "data.txt" in the same folder.
 You should also add in the same folder an icon called "images.png"
 
 If you want to create your own bot in the same way you have to create a new dedicated account and you have to registred it on https://twitchapps.com/tmi/ to get your own oauth token
